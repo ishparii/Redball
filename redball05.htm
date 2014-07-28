@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#redball {
+			position: absolute;
+			left: 200px;
+			top: 150px;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$( document ).ready(function() {
+    		console.log( "ready!" );
+		$("#redball").fadeOut();
+		$("#redball").fadeIn();
+		$("#redball").animate({"left": "+=50px"}, "slow");
+		$("#redball").animate({"left": "-=50px"}, "slow");
+		});
+	</script>
+</head>
+<body>
+	<img id="redball" src="redball.jpg"/>
+	<table border="1px"; align="center">
+			<thead></thead>
+			<tbody>
+				<tr>
+					<td>
+						<button id="leftUp"><img src="http://icons-watermarks.s3.amazonaws.com/simple-black/aiga/aiga_forward-and-left-arrow/aiga_forward-and-left-arrow_simple-black_48x48.png"/></button>	
+					</td>
+					<td>
+						<button id="up"><img src="http://icons-watermarks.s3.amazonaws.com/simple-black/aiga/aiga_up-arrow/aiga_up-arrow_simple-black_48x48.png"/></button>
+					</td>
+					<td>
+						<button id="rightUp"><img src="http://icons-watermarks.s3.amazonaws.com/simple-black/aiga/aiga_forward-and-right-arrow/aiga_forward-and-right-arrow_simple-black_48x48.png"/></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="left"><img src="http://icons-watermarks.s3.amazonaws.com/simple-black/aiga/aiga_left-arrow/aiga_left-arrow_simple-black_48x48.png"/></button>
+					</td>
+					<td>
+						<button id="sayHello"><img src="http://icons-watermarks.s3.amazonaws.com/simple-black/aiga/aiga_telephone/aiga_telephone_simple-black_48x48.png"/></button>
+					</td>
+					<td>
+						<button id="right"><img src="http://icons-watermarks.s3.amazonaws.com/simple-black/aiga/aiga_right-arrow/aiga_right-arrow_simple-black_48x48.png"/></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="leftDown"><img src="http://icons-watermarks.s3.amazonaws.com/simple-black/aiga/aiga_left-and-down-arrow/aiga_left-and-down-arrow_simple-black_48x48.png"/></button>
+					</td>
+					<td>
+						<button id="down"><img src="http://icons-watermarks.s3.amazonaws.com/simple-black/aiga/aiga_down-arrow/aiga_down-arrow_simple-black_48x48.png"/></button>
+					</td>
+					<td>
+						<button id="rightDown"><img src="http://icons-watermarks.s3.amazonaws.com/simple-black/aiga/aiga_right-and-down-arrow/aiga_right-and-down-arrow_simple-black_48x48.png"/></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="square"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFW1MLu-V8xvOwg46jFscJxYdZmFzFyz8AkG62n4TwxyvQoRrv3Q"/></button>
+					</td>
+					<td>
+						<button id="triangle"><img src="http://icons-watermarks.s3.amazonaws.com/simple-black/classic-arrows/classic-arrows_triangle-clear-up/classic-arrows_triangle-clear-up_simple-black_48x48.png"/></button>
+					</td>
+					<td>
+						<button id="bounce"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBggGBQkIBwgKCQkKDRYODQwMDRoTFBAWHxwhIB8cHh4jJzIqIyUvJR4eKzssLzM1ODg4ISo9QTw2QTI3OCwBCQoKBQUFDQUFDSkYEhgpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKf/AABEIADAAMAMBIgACEQEDEQH/xAAcAAACAwADAQAAAAAAAAAAAAAGBwMEBQECCAD/xAA0EAABAwIDBQUGBwEAAAAAAAABAgMEBREABhITITFRcQcUImGBQUKCkaGxIzM0UpLB0ST/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AeOI5EhqLHW9IdQy02NS1rUEpSOZJxJgN7W6HJzB2ezIkN9phwLQ6S84G0KCTcgqO4evLAWj2k5cW4URZq5hHExmFuJ/kBb647J7Q6Jf8VUpkfuXGXb6A4Tb1TlVZbaIqg0hppLahERtEagLblbkW9cU0N1uLIu+tpTN+JeGq3Tf98B6Mp1UhVeKJFPlNSWT7zar2PI8j5YtYSmVJUmm1+PMiK0ArQiSi9g6hSgmx5kXuOmHXgMzMlei5Yy9Lq02+xio1FI4qPAAdSQMIytzqtmdpNYzG4VNuNl+LTUE7JlHukj3lEc8OrOuXWc1ZQn0p93YJfbuHbX0KSdQNuVxhP5WqiatlRhdXYOmKvujMpk73kpHEpPLdgMinRptZYQ/JnpgxVC6GmEbRwjpcJT8RB8sTJyyhdXZVEfmvoRvKHiklavZuTuA9TjVTUaTrW3Eh1CUttRSUq0tpB6k8PPHDsqqSQGYimICFEXRFutwjkVkfbAaLkPYRxTmXdM2QpJW4g/k6TdNjzBAPphsZfmuVLLtPlvW2r8dC125lIvhVR2E0gBb51S3fChsG5QDxJ88MXJ7aYsOVBaUSzFeAaSTfQFISrT0uo/PAb6khaClQulQsRhEQWGst5yruV2h3ujw/+pO0FnGlKCfCk+0b/ph8YAs19mr1RzMrMOX5zcKouthuQ1IRrZkJtbxAbxwHywAX36kiaGe5Skgp1bVxX4fS6QTf0x9IqLq0FmlDu5Vu1tNkEeqvEfknrgoYyHVlfqadSwr2lua4En00Y3Kfkp1oDbPR4qfamI3dR+Nf9JGAA4UJqiMpm1Zw+DxIbWq7jiuZ/wBwXZElqmVcygpJVLjrW9o4HSpIQfS6hilK7HlGsTJUSuvBmYrUtmUztynooqBwWZVylDynBUzGW4845vcdctc+QA4Ded3ngP/Z"/></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="octagon"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgUCgkLGBYaDQwMDSQUFRAWICkZJiAdHx8kHSgsHyYlJxcmLT0tMSwsOjo6KB8/RDMsQzQ5OjcBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIADAAMAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAABQYBBwL/xAAxEAABAgQGAQIFAgcAAAAAAAABAgMEBQYRABIhMUFRExVCUmFxotOBsxQiMlSDkaP/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7cpRKsqB9T1iQns9jptNF07SruR9u3qEyAzJgx8CeFOHrjn5FRTmPm0zdpqmFlp9FvUZiBpCJPtR24R/rf6PpFJoCnJW3BQLeRpG5OqlqO5J5J5OARqpKZIRmXWsf+ha/FgRSM0Kcy60j0/q1+LFUhJUfI7pbYdYzV89ND7sBKSOex0rmjVP1Q9ncdv6fM8uVMaB7VcJcHXPGK7PmXkRxuesLp9KYKfy9yWRrPkZVa6hoW1DZSTwocHCKn5tHSWZt0zUi/K85f06Y2smMQPavpxI373+oeqKUlE3q9Sv70/ts4qkJKj5HdLbDrErRKUmc1cpXtjT+2zip1fPTQ+7AGr56aH3Y1aio+NrS256wLUVHxtaW3PWAkMpCGxdR2GACQykIbF1HYYlKzRknVIqUbqMZqf8b2KsAMpK3DdR3OJSss5ndIrXpeM0T0PG9gMqGSx8smbtRUy15HlW9QlwVZMcke5PTgGx52w8ks7g6glzUXKXMzK9FZhZTShuhQ4UOsMnMyv5UadnrElO5HHSaZmoKTazxDlvUJdmsiNT8Q4S4ODzz8wqyQykIbF1HYYAAykrcN1Hc4lm6pmaLqVRkcVHc3a/NjBVM0K866Mjjb+kXasP+uAdTubwcjlzkzmzmRpGiGwLqWo7JSPco9YR09KZhOZo3UtTN+N5F/T5de6YNJ5PxOEbnjYYySyOPnM1RUNVN+N5u/8AAS7NmTBp+I8KcPJ42HysCTcJSNOTgP/Z"></button>
+					</td>
+					<td></td>
+					<td>
+						<button id="moveX"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-EbbYX3gWjYVdR5ioOBu6PGY4rN25PPjXRbfNSv_GHOfA0uap"></button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script>
+			$("#up").click(function(){
+  				$("#redball").animate({ "top": "-=50px" }, "slow" );
+			});
+			$("#left").click(function(){
+  				$("#redball").animate({ "left": "-=50px" }, "slow" );
+			});
+			$("#down").click(function(){
+  				$("#redball").animate({ "top": "+=50px" }, "slow" );
+			});
+			$("#right").click(function(){
+  				$("#redball").animate({ "left": "+=50px" }, "slow" );
+			});
+			$("#leftUp").click(function(){
+				$("#redball").animate({ "top": "-=50px", "left": "-=50px"}, "slow");
+  			});
+  			$("#rightUp").click(function(){
+				$("#redball").animate({ "top": "-=50px", "left": "+=50px"}, "slow");
+  			});
+  			$("#leftDown").click(function(){
+				$("#redball").animate({ "top": "+=50px", "left": "-=50px"}, "slow");
+  			});
+  			$("#rightDown").click(function(){
+				$("#redball").animate({ "top": "+=50px", "left": "+=50px"}, "slow");
+  			});
+  			$("#square").click(function(){
+  				$("#redball").animate({ "left": "+=150px" }, "slow" );
+  				$("#redball").animate({ "top": "+=150px" }, "slow" );
+  				$("#redball").animate({ "left": "-=150px" }, "slow" );
+  				$("#redball").animate({ "top": "-=150px" }, "slow" );
+  			});
+  			$("#triangle").click(function(){
+  				$("#redball").animate({ "top": "+=150px", "left": "+=75px"}, "slow");
+  				$("#redball").animate({ "left": "-=150px" }, "slow" );
+  				$("#redball").animate({ "top": "-=150px", "left": "+=75px"}, "slow");
+  			});
+  			$("#octagon").click(function(){
+  				$("#redball").animate({ "left": "+=150px" }, "slow" );
+  				$("#redball").animate({ "top": "+=150px", "left": "+=150px"}, "slow");
+  				$("#redball").animate({ "top": "+=150px" }, "slow" );
+  				$("#redball").animate({ "top": "+=150px", "left": "-=150px"}, "slow");
+  				$("#redball").animate({ "left": "-=150px" }, "slow" );
+  				$("#redball").animate({ "top": "-=150px", "left": "-=150px"}, "slow");
+  				$("#redball").animate({ "top": "-=150px" }, "slow" );
+  				$("#redball").animate({ "top": "-=150px", "left": "+=150px"}, "slow");
+  			});
+  			$("#moveX").click(function(){
+  				$("#redball").animate({ "top": "+=150px", "left": "+=150px"}, "slow");
+  				$("#redball").animate({ "top": "-=150px", "left": "-=150px"}, "slow");
+  				$("#redball").animate({ "top": "+=150px", "left": "-=150px"}, "slow");
+  				$("#redball").animate({ "top": "-=150px", "left": "+=150px"}, "slow");
+  				$("#redball").animate({ "top": "-=150px", "left": "-=150px"}, "slow");
+  				$("#redball").animate({ "top": "+=150px", "left": "+=150px"}, "slow");
+  				$("#redball").animate({ "top": "-=150px", "left": "+=150px"}, "slow");
+  				$("#redball").animate({ "top": "+=150px", "left": "-=150px"}, "slow");
+  			});
+  			$("#bounce").click(function(){
+  				$("#redball").animate({ "top": "-=150px", "left": "+=150px"}, "slow");
+  				$("#redball").animate({ "top": "+=250px", "left": "+=855px"}, "slow");
+  				$("#redball").animate({ "top": "+=255px", "left": "-=855px"}, "slow");
+  				$("#redball").animate({ "top": "-=255px", "left": "-=350px"}, "slow");
+  				$("#redball").animate({ "top": "-=100px", "left": "+=200px"}, "slow");
+  			});
+  			$("#sayHello").click(function(){
+  				alert("Hi Ilona!");
+  			});
+		</script>
+</body>
+</html>
